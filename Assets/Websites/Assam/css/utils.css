@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root{
+    --font1: 'Allura', cursive;
+    --main-bg-color: rgba(247, 7, 227, 0.548);
+    --font2: 'Gloria Hallelujah', cursive;
+    --font3: 'Langar', cursive;
+    --font4: 'East Sea Dokdo', cursive;
+    --font5: 'Roboto', sans-serif;
+}
+.m-auto{
+    margin: auto;
+}
+.max-width-1{
+    width: 80vw;
+}

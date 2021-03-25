@@ -1,0 +1,444 @@
+.loader_bg{
+    position: fixed;
+    z-index: 999999;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+}
+.loader{
+    border: 0px solid transparent;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: calc(50vh - 75px);
+    left: calc(50vw - 75px);
+}
+.loader:before, .loader:after{
+    content: '';
+    border: 1em solid #ff5733;
+    border-radius: 50%;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: loader 2s linear infinite;
+    opacity: 0;
+}
+.loader::before{
+    animation-delay: .5s;
+}
+@keyframes loader {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.nav-bar{
+    width: 100%;
+    background: #000;
+    display: flex;
+    align-items: center;
+    height: 70px;
+    position: sticky;
+    top: 0;
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    font-family: var(--font1);
+    font-size: 30px;
+    color: white;
+    position: relative;
+    top: 6px;
+}
+.nav-list li{
+    list-style: none;
+}
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 15px;
+}
+.left{
+    width: 50%;
+}
+.right{
+    text-align: right;
+    width: 50%;
+}
+.right input{
+    padding: 0 12px;
+    outline: none;
+    border: 2px solid rgb(196, 193, 193);
+    width: 250px;
+    height: 30px;
+    border-radius: 6px;
+}
+.logo img{
+    width: 175px;
+}
+.right button{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background: none;
+    border: 2px solid white;
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    padding-bottom: 4px;
+    margin-right: 45px;
+}
+#home{
+    height: 650px;
+}
+.s-1{
+    background: rgba(0, 0, 0, 0.7) url(../images/fishing-2.jpg);
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 128vh;
+    background-blend-mode: darken;
+    display: flex;
+    justify-content: center;
+    background-attachment: fixed;
+    align-items: center;
+    flex-direction: column;
+    clip-path: circle(160vh at 50% -72vh);
+}
+.s-1 h1{
+    color: white;
+    font-family: var(--font5);
+    font-size: 30px;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+.s-1 button{
+    font-size: 17px;
+    width: 177px;
+    height: 37px;
+    margin-top: 30px;
+    color: white;
+    background: none;
+    border: 2px solid #fff;
+    outline: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 3px;
+    cursor: pointer;
+    font-weight: 500;
+}
+.s-1 button:hover{
+    background: white;
+    color: black;
+    transition: .3s ease-in-out;
+    font-weight: 500;
+}
+#about{
+    height: 600px;
+    background: rgba(0, 0, 0, 0.7) url(../images/photo-2.jpg);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+.s-1 h2{
+    color: white;
+    font-family: var(--font2);
+}
+.s-1 b{
+    font-size: 75px;
+    color: yellow;
+}
+#about h1{
+    text-align: center;
+    padding-top: 25px;
+    font-family: var(--font2);
+}
+.left-a{
+    width: 150vh;
+    margin: auto;
+    font-family: var(--font2);
+    text-align: justify;
+}
+.right-a{
+    /* width: 50%; */
+    height: 300px;
+}
+.image img{
+    width: 430px;
+    padding: 0 15px;
+}
+.image{
+    margin-left: 25px;
+    margin-top: 30px;
+}
+#services{
+    height: 1200px;
+    background: rgba(0, 0, 0, 0.7) url('../images/jeep.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+#services h1{
+    text-align: center;
+    color: white;
+    font-family: var(--font2);
+    padding-top: 24px;
+    font-size: 27px;
+}
+#services h3{
+
+    color: rgb(255, 230, 9);
+    text-align-last: center;
+    padding-top: 30px;
+    font-family: var(--font2);
+    text-decoration: underline;
+    position: relative;
+    top: 95px;
+    right: -201px;
+
+}
+#services h2{
+    color: rgb(129, 194, 255);
+    font-family: var(--font4);
+    font-size: 65px;
+    text-decoration: underline;
+    text-align: center;
+}
+.package-1 img{
+    width: 550px;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+.package-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    text-align: center;
+
+}
+.left-p{
+    width: 40%;
+}
+.right-p{
+    width: 60%;
+    color: white;
+}
+.right-p h1{
+    color: rgb(247, 59, 247);
+    font-family: var(--font2);
+    text-decoration: underline;
+}
+.right-p p{
+    font-family: var(--font2);
+}
+.right-p-1{
+    margin-right: 40px;
+}
+.right-p-1 img{
+    
+    width: 550px;
+    height: 280px;
+
+}
+.left-p-1{
+    width: 70%;
+    text-align: center;
+    font-family: var(--font2);
+    color: white;
+}
+.package-2{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 40px;
+}
+.left-p-1 h1{
+    color: rgb(247, 59, 247);
+    text-decoration: underline;
+}
+.right-p-2{
+    margin-left: 40px;
+}
+.right-p-2 img{
+    
+    width: 550px;
+    height: 280px;
+
+}
+.left-p-2{
+    width: 70%;
+    text-align: center;
+    font-family: var(--font2);
+    color: white;
+}
+.package-3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 40px;
+}
+.left-p-2 h1{
+    color: rgb(247, 59, 247);
+    text-decoration: underline;
+}
+.btn{
+    width: 160px;
+    height: 35px;
+    font-size: 17px;
+    margin-top: 20px;
+    border: 2px solid white;
+    cursor: pointer;
+    background: white;
+    color: black;
+    font-weight: 500;
+    outline: none;
+}
+
+#gallery{
+    height: 1620px;
+    background: rgba(0, 0, 0, 0.7) url(../images/bogi.jfif);
+    color: white;
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#gallery h1{
+    font-family: var(--font2);
+    padding-top: 30px;
+    text-align-last: center;
+    font-size: 40px;
+}
+#img5{
+    margin-top: 68px;
+}
+.gallery{
+    /* display: flex; */
+    margin-top: 30px;
+    margin-left: 80px;
+}
+#im4{
+    width: 553px;
+    margin-left: 10px;
+}
+.btn:hover{
+    background: black;
+    /* font-weight: bolder; */
+    color: white;
+    border: none;
+    transition: .4s ease-in-out;
+}
+#im1{
+    width: 630px;
+}
+#im3{
+    width: 521px;
+}
+#im2{
+    width: 553px;
+    margin-bottom: -58px;
+}
+#img6{
+    width: 525px;
+    margin-left: 30px;
+}
+#img7{
+    width: 525px;
+}
+#img8{
+    width: 525px;
+    margin-left: 40px;
+}
+.line{
+
+}
+#contact{
+    height: 800px;
+    background: rgba(0, 0, 0, 0.7) url(../images/Football-Fever-1.jpg);
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#contact h1{
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 35px;
+    font-family: var(--font2);
+}
+main{
+    min-width: calc(100vh- 70px - 63px);
+}
+footer{
+    padding: 20px;
+    font-family: var(--font2);
+    color: white;
+    background: #000;
+    text-align: center;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact input{
+    margin-top: 30px;
+    height: 35px;
+    border: 2px solid grey;
+    border-radius: 7px;
+    outline: none;
+    padding-left: 19px;
+    /* width: 80vw; */
+    /* margin: auto; */
+    font-size: 18px;
+}
+.contact button{
+    width: 130px;
+    font-size: 20px;
+    height: 40px;
+    margin-top: 30px;
+    background: none;
+    border: 2px solid white;
+    color: white;
+    font-weight: bolder;
+    /* margin-left: 19px; */
+}
+.contact button:hover{
+    background: white;
+    color: black;
+    transition: .3s ease-in-out;
+}
+.contact textarea{
+    margin-top: 30px;
+    font-size: 18px;
+    padding-top: 10px;
+    border-radius: 7px;
+    outline: none;
+    padding-left: 10px;
+    height: 250px;
+}

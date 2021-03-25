@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: white;
+}
+header{
+
+}
+header span{
+    text-transform: /*uppercase*/;
+    color: black;
+    font-family: var(--font1);
+    font-size: 30px;
+    font-weight: bolder;
+    position: relative;
+    top: 20px;
+    left: 30px;
+    /* border: 2px solid black;
+    border-radius: 40px; */
+    cursor: pointer;
+    /* padding: 2px 10px; */
+}
+.menu {
+    position: absolute;
+    right: 80px;
+    top: 20px;
+}
+.menu ul{
+    list-style: none;
+}
+.menu ul li{
+    display: inline;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 19px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 1px 15px;
+    border: 2px solid black;
+    padding-bottom: 5px;
+}
+.menu ul li a:hover{
+    color: #fff;
+    background: #000;
+    padding: 1px 15px;
+    transition: 0.2s ease-in-out;
+    padding-bottom: 5px;
+}
+.circle {
+    width: 250px;
+    height: 250px;
+    border: 30px solid rgb(18, 173, 245);
+    border-radius: 50%;
+    position: absolute;
+    top: 75px;
+    left: 430px;
+}
+.image img{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    position: absolute;
+    top: 120px;
+    left: 95px;
+}
+.c2 img {
+    width: 220px;
+    border: 20px solid rgb(0, 38, 255);
+    border-radius: 50%;
+    height: 205px;
+    position: absolute;
+    top: 386px;
+    left: 360px;
+}
+.sm-dot{
+    height: 100px;
+    width: 100px;
+    background: rgb(0, 26, 255);
+    border-radius: 50%;
+    position: relative;
+    top: 460px;
+    left: 90px;
+}
+.r-head{
+    width: 50%;
+    float: right;
+}
+.r-head h3{
+    color: rgb(185, 181, 181);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 12px;
+}
+.r-head h1{
+    color: rgb(187, 187, 187);
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 65px;
+    float: left;
+    width: 650px;
+}
+.r-head p{
+    width: 650px;
+    text-align: justify;
+    margin-top: 156px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(90, 87, 87);
+    letter-spacing: 1px;
+}
+.r-head button {
+    margin-top: 25px;
+    color: black;
+    border: 3px solid black;
+    font-size: 19px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+    width: 130px;
+    height: 40px;
+    background: none;
+    padding-bottom: 5px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.r-head button:hover{
+    color: white;
+    background: black;
+    transition: .3s ease-in-out;
+}

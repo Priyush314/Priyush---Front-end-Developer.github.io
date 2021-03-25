@@ -1,0 +1,410 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Home starts */
+#hero-section{
+    width: 100%;
+    height: 100vh;
+    background: url(../images/bg.jpg) rgb(0, 0, 0, 0.5);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.intro{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    text-align: center;
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+    padding: 60px 30px;
+    margin: 0 auto;
+    max-width: 850px;
+    left: 0;
+    right: 0;
+    background: url(../images/pattern1.png);
+    background-size: 217px;
+    background-position: left center;
+    background-repeat: no-repeat;
+    z-index: 31;
+    text-align: left;
+    color: white;
+    font-family: var(--font1);
+}
+.hello h1{
+    font-size: 16px;
+    text-transform: none;
+    margin: 15px 0;
+    font-weight: 200;
+    color: #d3d2d8;
+}
+.big-f{
+    letter-spacing: 5px;
+    font: 700 40px/1.2 'Poppins', sans-serif;
+}
+.who-creates{
+    font-size: 16px;
+    text-transform: none;
+    margin: 15px 0;
+    font-weight: 200;
+    color: #d3d2d8;
+}
+/* Home ends */
+/* navigation starts */
+nav{
+    width: 100%;
+    height: 50px;
+    position: sticky;
+    top: 0;
+    background: white;
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.25);
+}
+nav .logo{
+    font-size: 18px;
+    font-family: var(--font1);
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+}
+.center{
+    width: 1140px;
+    margin: auto;
+    height: 100%;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+}
+.navlist{
+    list-style: none;
+    width: 755.59px;
+    float: right;
+}
+.navlist li{
+    display: inline-block;
+}
+.navlist li a{
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #5b5963;
+    text-transform: uppercase;
+    line-height: 50px;
+    padding-top: 19px;
+    font-family: var(--font1);
+    padding-bottom: 19px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+nav ul li a:hover{
+    background: rgba(253,115,90,1);
+}
+.active{
+    background: rgba(253,115,90,1);
+}
+/* Navigation ends */
+
+
+/* Section Works starts */
+#works{
+    width: 100%;
+    height: 1430px;
+}
+.intro-work{
+    width: 100%;
+    margin-top: 10px;
+    height: 200px;
+}
+.intro-work h1{
+    text-transform: uppercase;
+    font-family: var(--font1);
+    font-size: 80px;
+    text-align: center;
+    color: #eceaea;
+    padding-top: 60px;
+    letter-spacing: 8px;
+}
+.intro-work p{
+    text-transform: uppercase;
+    font-family: var(--font1);
+    text-align: center;
+    margin-top: -60px;
+    letter-spacing: 3px;
+    font-weight: 200;
+    font-size: 25px;
+}
+.line{
+    width: 100px;
+    height: 1px;
+    background: black;
+    margin: auto;
+    margin-top: 35px;
+}
+.works{
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-evenly;
+}
+.work-1{
+    display: flex;
+    justify-content: space-evenly;
+}
+.work-1 img{
+    padding: 10px;
+    cursor: pointer;
+}
+/* sction works ends */
+/* section service starts */
+#service{
+    width: 100%;
+    height: 130vh;
+    background: rgb(218, 217, 217);
+}
+.service-intro{
+    width: 100%;
+    height: 200px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: var(--font1);
+}
+.service-intro h1{
+    text-transform: uppercase;
+    font-family: var(--font1);
+    font-size: 80px;
+    text-align: center;
+    color: #eceaea;
+    padding-top: 60px;
+    letter-spacing: 8px;
+}
+.service-intro p{
+    text-transform: uppercase;
+    font-family: var(--font1);
+    text-align: center;
+    margin-top: -60px;
+    letter-spacing: 3px;
+    font-weight: 200;
+    font-size: 25px;
+}
+                /* css for my srvices box */
+.services{
+    width: 100%;
+    height: 250vh;
+    display: flex;
+    /* justify-content: space-evenly; */
+    /* align-items: center; */
+}
+.service-1{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.fas .fa-desktop{
+    width: 50px;
+    height: 50px;
+}
+.web-des{
+    width: 390px;
+    height: 283px;
+    background: white;
+    align-items: center;
+    /* border-radius: 10px; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow:  5px 8px 10px  rgba(0, 0, 0, 0.25);
+}
+.web-des h1{
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+}
+.web-des p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: capitalize;
+    width: 90%;
+    text-align: justify;
+    padding-top: 20px;
+}
+.web-des:hover{
+    margin-top: -15px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    background: rgb(255, 167, 151);
+}
+/* section service ends */
+/* section about starts */
+#about{
+    width: 100%;
+    height: 150vh;
+}
+.about{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.intro-about{
+    width: 100%;
+    height: 300px;
+}
+.intro-about h1{
+    text-transform: uppercase;
+    font-family: var(--font1);
+    font-size: 80px;
+    text-align: center;
+    color: #eceaea;
+    padding-top: 60px;
+    letter-spacing: 8px;
+}
+.intro-about h2{
+    text-transform: uppercase;
+    font-family: var(--font1);
+    text-align: center;
+    margin-top: -80px;
+    letter-spacing: 3px;
+    font-weight: 200;
+    font-size: 25px;
+}
+.myself{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+.img{
+    width: 50%;
+    height: 100%;
+}
+.img img{
+    width: 100%;
+    height: 100%;
+}
+.about_me{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: capitalize;
+    width: 90%;
+    text-align: justify;
+    margin: auto;
+    letter-spacing: 2px;
+}
+/* section about ends */
+ /* section contact starts  */
+ #contact{
+     width: 100%;
+     height: 110vh;
+ }
+ .intro-contact{
+     width: 100%;
+     text-align: center;
+     height: 200px;
+ }
+ .intro-contact h1{
+    text-transform: uppercase;
+    font-family: var(--font1);
+    font-size: 80px;
+    text-align: center;
+    color: #eceaea;
+    padding-top: 60px;
+    letter-spacing: 8px;
+ }
+ .intro-contact h2{
+    text-transform: uppercase;
+    font-family: var(--font1);
+    text-align: center;
+    margin-top: -62px;
+    letter-spacing: 3px;
+    font-weight: 200;
+    font-size: 25px;
+ }
+ .line-con{
+    width: 100px;
+    height: 1px;
+    background: black;
+    margin: auto;
+    margin-top: 35px;
+ }
+ .form{
+     width: 40vw;
+     margin: auto;
+     display: flex;
+     flex-direction: column;
+ }
+ .form input{
+     width: 100%;
+     font-size: 15px;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     height: 30px;
+     padding: 5px;
+     border: 2px solid lightgrey;
+     outline: none;
+     margin-top: 40px;
+ }
+ .form input:focus{
+     border: 1px solid black;
+     transition: .8s ease-in-out;
+ }
+ .form textarea{
+     font-size: 15px;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     width: 100%;
+     padding: 5px;
+     border: 2px solid lightgrey;
+     outline: none;
+     margin-top: 40px;
+    }
+.form textarea:focus{
+    border: 1px solid black;
+    transition: .8s ease-in-out;
+}
+.btn-contact{
+    width: 100%;
+    text-align: center;
+    height: 30px;
+}
+.btn-contact button{
+    background: rgb(252, 86, 57);
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 19px;
+    height: 35px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-weight: 500;
+}
+.btn-contact button:hover{
+    background: rgb(50, 255, 67);
+    transition: .7s ease-in-out;
+}
+ /* section contact ends  */
+footer{
+    padding: 20px;
+    text-align: center;
+    background: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
