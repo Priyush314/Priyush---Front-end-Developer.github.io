@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Priyush - Front-end Developer</title>
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="Assets/css/style.css">
 </head>
 
@@ -115,7 +116,7 @@
                         <div class="line js"></div>
                     </div>
                 </div>
-                <div class="animate">
+                <div data-aos="fade-up" class="animate">
                     <div class="animate2">
                         <div class="animate3">
                             <div class="animate4"></div>
@@ -132,17 +133,17 @@
                 <h3>Projects</h3>
             </div>
             <div class="flex-box">
-                <img src="Assets/images/projetc-2.jpg" alt="projetc-2">
-                <img src="Assets/images/projetc-3.jpg" alt="projetc-3">
+                <img data-aos="fade-right" src="Assets/images/projetc-2.jpg" alt="projetc-2">
+                <img data-aos="fade-left" src="Assets/images/projetc-3.jpg" alt="projetc-3">
             </div>
             <div class="flex-box bigger">
-                <img class="img" src="Assets/images/projetc-4.jpg" alt="projetc-4">
-                <img src="Assets/images/projetc-5.jpg" alt="projetc-5">
+                <img data-aos="fade-right" class="img" src="Assets/images/projetc-4.jpg" alt="projetc-4">
+                <img data-aos="fade-left" src="Assets/images/projetc-5.jpg" alt="projetc-5">
             </div>
             <div class="flex-row">
-                <img class="view" src="Assets/images/personal.jpg" alt="Project-6">
+                <img data-aos="fade-up" class="view" src="Assets/images/personal.jpg" alt="Project-6">
                 <a href="Assets/Websites/Personal Website/index.html"><button>view</button></a>
-                <img src="Assets/images/assam.jpg" alt="Project-7">
+                <img data-aos="fade-up" src="Assets/images/assam.jpg" alt="Project-7">
                 <a href="Assets/Websites/Assam/assam.html"><button>view</button></a>
             </div>
         </section>
@@ -168,6 +169,10 @@
             header.classList.toggle("sticky", window.scrollY > 0);
         })
     </script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init(1600);
+  </script>
 </body>
 
 </html>
